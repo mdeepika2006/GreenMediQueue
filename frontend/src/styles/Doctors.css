@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.doctors-page {
+  min-height: 100vh;
+  background-color: #f4fbf6;
+}
+
+.doctors-navbar {
+  background-color: #0b6e4f;
+  color: white;
+  padding: 14px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doctors-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.doctors-brand img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.doctors-brand h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.doctors-nav-links {
+  display: flex;
+  gap: 26px;
+}
+
+.doctors-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.doctors-nav-links a:hover {
+  color: #c8f5dd;
+}
+
+.doctors-header {
+  text-align: center;
+  padding: 55px 20px 35px;
+}
+
+.doctors-header h1 {
+  color: #0b6e4f;
+  font-size: 46px;
+  margin: 0 0 15px;
+}
+
+.doctors-header p {
+  color: #667085;
+  font-size: 19px;
+  margin: 0;
+}
+
+.all-doctors-grid {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 15px 20px 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.all-doctor-card {
+  background-color: white;
+  padding: 28px 22px 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.11);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.all-doctor-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+}
+
+.all-doctor-image {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #dff5e9;
+}
+
+.all-doctor-card h2 {
+  color: #0b6e4f;
+  font-size: 24px;
+  margin: 20px 0 8px;
+}
+
+.doctor-specialization {
+  color: #1f4e79;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.all-doctor-card p {
+  color: #4b5563;
+  margin: 8px 0;
+}
+
+.doctor-availability {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background-color: #dcfce7;
+  color: #166534;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.doctor-book-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 11px 22px;
+  background-color: #0b6e4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.doctor-book-button:hover {
+  background-color: #08563d;
+}
+
+@media screen and (max-width: 950px) {
+  .all-doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .doctors-navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  .doctors-nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .all-doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctors-header h1 {
+    font-size: 36px;
+  }
+}

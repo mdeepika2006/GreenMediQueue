@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5fff8;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #0b6e4f;
+  color: white;
+  padding: 15px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar h2 {
+  font-size: 28px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #b7f7d7;
+}
+
+/* Hero Section */
+
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.main-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 50px;
+  color: #0b6e4f;
+}
+
+.hero-section h2 {
+  margin-top: 10px;
+  color: #444;
+}
+
+.hero-section p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.primary-button-link {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background-color: #0b6e4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.primary-button-link:hover {
+  background-color: #08563d;
+}
+
+/* Services */
+
+.services-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.services-section h3 {
+  font-size: 35px;
+  color: #0b6e4f;
+  margin-bottom: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.service-card h4 {
+  margin-bottom: 10px;
+  color: #0b6e4f;
+}
+
+/* Doctors */
+
+.doctors-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.doctors-section h3 {
+  font-size: 35px;
+  color: #0b6e4f;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.doctor-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.doctor-card h4 {
+  margin-top: 15px;
+  color: #0b6e4f;
+}
+
+.specialization {
+  font-weight: bold;
+  color: #444;
+}
+
+.availability {
+  color: green;
+  margin-top: 8px;
+}
+
+.profile-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0b6e4f;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-button:hover {
+  background-color: #08563d;
+}
